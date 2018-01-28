@@ -4,7 +4,7 @@
 
    The mean is too large because it is greatly influenced by outliers ( shop id 42 order amount = 11,990,176.0 and shop id 78 order amount = 2,263,800 ) that have huge order amounts. 
 
-   Hence choosing mean as a metric to calculate AOV is misleading.
+   Hence choosing mean as a metric to represent AOV is misleading.
 
 
 2. What may be a better way to evaluate this data?
@@ -18,14 +18,14 @@
    Maximum: 704000.0
    Standard error: 583.823270363
 
-   After carefully analysis, I have come to a conculsion that median would be the best metric to evaluate AOV
+   After careful analysis, I have come to a conculsion that median would be the best metric to evaluate AOV
 
 
 3. What other data would be helpful in measuring if a shop is successful?
    
    First lets add the order_amount for each shop_id and store them in a dictionary. Now we would have total_order_amounts for all respective shop_ids (1-100). Then we can store the order_amounts corresponding to each shop_id in a list and do exploratory analysis on that.
 
-   we find again mean to be a bad metric (greatly influenced by outliers) to measure success, hence we choose median to measure if a shop is successful or not.
+   we find again mean to be a bad metric (greatly influenced by outliers) to measure success of a shop, hence we choose median to measure if a shop is successful or not.
 
    Mean:  157256.4
    Median:  14887.5
